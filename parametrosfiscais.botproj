@@ -1,0 +1,817 @@
+from botcity.core import DesktopBot
+
+class Bot(DesktopBot):
+        def action(self, execution=None):
+
+            #######################-----LOGIN-----############################
+        
+            self.execute(r"C:\Users\Rafael\Desktop\2207\faturamento.exe")
+            
+            if not self.find( "btn_codigo_usuario", matching=0.97, waiting_time=30000):
+                self.not_found("btn_codigo_usuario")
+            self.click_relative(47, 12)
+                    
+            self.paste("999")
+            self.paste("teofire21")
+            self.enter()
+
+            if not self.find( "btn_login", matching=0.97, waiting_time=10000):
+                self.not_found("btn_login")
+            self.click()
+
+            ###################################################################
+        
+        
+        
+                        ####---ABRINDO PARAMETROS---####
+            
+            if not self.find( "pfcadastros", matching=0.97, waiting_time=10000):
+                self.not_found("pfcadastros")
+            self.click()
+            if not self.find( "parametros", matching=0.97, waiting_time=10000):
+                self.not_found("parametros")
+            self.click()
+            if not self.find( "parametrosempresa", matching=0.97, waiting_time=10000):
+                self.not_found("parametrosempresa")
+            self.click()
+            if not self.find( "localizape", matching=0.97, waiting_time=10000):
+                self.not_found("localizape")
+            self.click()
+            if not self.find( "editarpe", matching=0.97, waiting_time=10000):
+                self.not_found("editarpe")
+            self.click()
+            self.wait(3500)
+            if not self.find( "retornarpe", matching=0.97, waiting_time=10000):
+                self.not_found("retornarpe")
+            self.click()
+            if not self.find( "incluirpe", matching=0.97, waiting_time=10000):
+                self.not_found("incluirpe")
+            self.click()
+            if not self.find( "naope", matching=0.97, waiting_time=10000):
+                self.not_found("naope")
+            self.click()
+            if not self.find( "buscaempresape", matching=0.97, waiting_time=10000):
+                self.not_found("buscaempresape")
+            self.click()
+            self.backspace()
+            if not self.find( "localizape", matching=0.97, waiting_time=10000):
+                self.not_found("localizape")
+            self.click()
+            if not self.find( "cod2empresape", matching=0.97, waiting_time=10000):
+                self.not_found("cod2empresape")
+            self.click()
+            if not self.find( "selecionarpe", matching=0.97, waiting_time=10000):
+                self.not_found("selecionarpe")
+            self.click()
+            
+                            ####---TITULOS COM ATRASOS---####
+            
+            if not self.find( "tituloscomatrasos", matching=0.97, waiting_time=10000):
+                self.not_found("tituloscomatrasos")
+            self.click_relative(165, 19)
+            if not self.find( "tituloscomatrasos2", matching=0.97, waiting_time=10000):
+                self.not_found("tituloscomatrasos2")
+            self.click_relative(163, 30)
+            
+                               ####---INTEGRACOES ERP---####
+            
+            if not self.find( "administrativo_com_livros_fiscais", matching=0.97, waiting_time=10000):
+                self.not_found("administrativo_com_livros_fiscais")
+            self.click_relative(163, 27)
+            self.type_down()
+            self.enter()
+            if not self.find( "administrativo_com_livros_fiscais", matching=0.97, waiting_time=10000):
+                self.not_found("administrativo_com_livros_fiscais")
+            self.click_relative(163, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "financeirocomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("financeirocomcontabilidade")
+            self.click_relative(160, 22)
+            self.type_down()
+            self.enter()
+            if not self.find( "financeirocomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("financeirocomcontabilidade")
+            self.click_relative(160, 22)
+            self.type_up()
+            self.enter()
+            if not self.find( "livrosfiscaiscomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("livrosfiscaiscomcontabilidade")
+            self.click_relative(162, 27)
+            self.type_down()
+            self.enter()
+            if not self.find( "livrosfiscaiscomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("livrosfiscaiscomcontabilidade")
+            self.click_relative(162, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "estoquecomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("estoquecomcontabilidade")
+            self.click_relative(164, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "estoquecomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("estoquecomcontabilidade")
+            self.click_relative(164, 24)
+            self.type_up()
+            self.enter()
+            if not self.find( "gestaopessoalcomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("gestaopessoalcomcontabilidade")
+            self.click_relative(162, 27)
+            self.type_down()
+            self.enter()
+            if not self.find( "gestaopessoalcomcontabilidade", matching=0.97, waiting_time=10000):
+                self.not_found("gestaopessoalcomcontabilidade")
+            self.click_relative(162, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "alterarlancamentoscontabeis", matching=0.97, waiting_time=10000):
+                self.not_found("alterarlancamentoscontabeis")
+            self.click_relative(164, 25)
+            self.type_down()
+            self.enter()
+            if not self.find( "alterarlancamentoscontabeis", matching=0.97, waiting_time=10000):
+                self.not_found("alterarlancamentoscontabeis")
+            self.click_relative(164, 25)
+            self.type_up()
+            self.enter()
+            if not self.find( "conhecimentoscomlivrosfiscais", matching=0.97, waiting_time=10000):
+                self.not_found("conhecimentoscomlivrosfiscais")
+            self.click_relative(165, 25)
+            self.type_up()
+            self.enter()
+            if not self.find( "conhecimentoscomlivrosfiscais", matching=0.97, waiting_time=10000):
+                self.not_found("conhecimentoscomlivrosfiscais")
+            self.click_relative(165, 25)
+            self.type_down()
+            self.enter()
+            
+                            ####---DOC E---####
+                             
+            if not self.find( "utilizanfe", matching=0.97, waiting_time=10000):
+                self.not_found("utilizanfe")
+            self.click_relative(161, 23)
+            self.type_down()
+            self.enter()
+            if not self.find( "utilizanfe", matching=0.97, waiting_time=10000):
+                self.not_found("utilizanfe")
+            self.click_relative(161, 23)
+            self.type_up()
+            self.enter()
+            if not self.find( "mododeenvionfe", matching=0.97, waiting_time=10000):
+                self.not_found("mododeenvionfe")
+            self.click_relative(162, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "mododeenvionfe", matching=0.97, waiting_time=10000):
+                self.not_found("mododeenvionfe")
+            self.click_relative(162, 24)
+            self.type_up()
+            self.enter()
+            if not self.find( "mododeenvionfce", matching=0.97, waiting_time=10000):
+                self.not_found("mododeenvionfce")
+            self.click_relative(164, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "mododeenvionfce", matching=0.97, waiting_time=10000):
+                self.not_found("mododeenvionfce")
+            self.click_relative(164, 24)
+            self.type_up()
+            self.enter()
+            if not self.find( "mododefinalizacaonfse", matching=0.97, waiting_time=10000):
+                self.not_found("mododefinalizacaonfse")
+            self.click_relative(164, 27)
+            self.type_down()
+            self.enter()
+            if not self.find( "mododefinalizacaonfse", matching=0.97, waiting_time=10000):
+                self.not_found("mododefinalizacaonfse")
+            self.click_relative(164, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "utilizanfsenfem", matching=0.97, waiting_time=10000):
+                self.not_found("utilizanfsenfem")
+            self.click_relative(165, 25)
+            self.type_up()
+            self.enter()
+            if not self.find( "utilizanfsenfem", matching=0.97, waiting_time=10000):
+                self.not_found("utilizanfsenfem")
+            self.click_relative(165, 25)
+            self.type_down()
+            self.enter()
+            
+                            ####---VERIFICACOES E EXIGENCIAS---####
+                             
+            x=0
+            while x < 4:
+                if not self.find( "verificarlimitedecredito", matching=0.97, waiting_time=10000):
+                    self.not_found("verificarlimitedecredito")
+                self.click_relative(161, 25)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x < 4:
+                if not self.find( "verificarlimitedecredito", matching=0.97, waiting_time=10000):
+                    self.not_found("verificarlimitedecredito")
+                self.click_relative(161, 25)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x < 4:
+                if not self.find( "verificasituacaocadastro", matching=0.97, waiting_time=10000):
+                    self.not_found("verificasituacaocadastro")
+                self.click_relative(162, 25)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x < 4:
+                if not self.find( "verificasituacaocadastro", matching=0.97, waiting_time=10000):
+                    self.not_found("verificasituacaocadastro")
+                self.click_relative(162, 25)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+                
+            x=0
+            while x<2:
+                if not self.find( "verificacnpjcpfduplicado", matching=0.97, waiting_time=10000):
+                    self.not_found("verificacnpjcpfduplicado")
+                self.click_relative(164, 24)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<2:
+                if not self.find( "verificacnpjcpfduplicado", matching=0.97, waiting_time=10000):
+                    self.not_found("verificacnpjcpfduplicado")
+                self.click_relative(164, 24)
+                self.type_up()
+                self.enter()
+                x=x+1
+
+
+            x=0
+            while x<4:
+                if not self.find( "nivelexigenciacadastro", matching=0.97, waiting_time=10000):
+                    self.not_found("nivelexigenciacadastro")
+                self.click_relative(161, 24)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<4:
+                if not self.find( "nivelexigenciacadastro", matching=0.97, waiting_time=10000):
+                    self.not_found("nivelexigenciacadastro")
+                self.click_relative(161, 24)
+                self.type_up()
+                self.enter()
+                x=x+1
+            
+            if not self.find( "cadastramentosemmacros", matching=0.97, waiting_time=10000):
+                self.not_found("cadastramentosemmacros")
+            self.click_relative(165, 26)
+            self.type_down()
+            self.enter()
+            if not self.find( "cadastramentosemmacros", matching=0.97, waiting_time=10000):
+                self.not_found("cadastramentosemmacros")
+            self.click_relative(165, 26)
+            self.type_up()
+            self.enter()
+            
+            x=0
+            while x<4:
+                if not self.find( "atrasospagamentos", matching=0.97, waiting_time=10000):
+                    self.not_found("atrasospagamentos")
+                self.click_relative(164, 27)
+                self.type_down()
+                self.enter()
+                x=x+1
+            
+            x=0
+            while x<4:
+                if not self.find( "atrasospagamentos", matching=0.97, waiting_time=10000):
+                    self.not_found("atrasospagamentos")
+                self.click_relative(164, 27)
+                self.type_up()
+                self.enter()
+                x=x+1
+            
+            
+            x=0
+            while x<3:
+                if not self.find( "verificarchequesnolimite", matching=0.97, waiting_time=10000):
+                    self.not_found("verificarchequesnolimite")
+                self.click_relative(162, 23)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<3:
+                if not self.find( "verificarchequesnolimite", matching=0.97, waiting_time=10000):
+                    self.not_found("verificarchequesnolimite")
+                self.click_relative(162, 23)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            
+            if not self.find( "modochecagemfinanceira", matching=0.97, waiting_time=10000):
+                self.not_found("modochecagemfinanceira")
+            self.click_relative(165, 26)
+            self.type_down()
+            self.enter()
+            if not self.find( "modochecagemfinanceira", matching=0.97, waiting_time=10000):
+                self.not_found("modochecagemfinanceira")
+            self.click_relative(165, 26)
+            self.type_down()
+            self.enter()
+        
+                        ####---ABA2 FINANCEIRO---####
+
+            if not self.find( "aba2parametros", matching=0.97, waiting_time=10000):
+                self.not_found("aba2parametros")
+            self.click()
+            
+            if not self.find( "baixaarecebermultiempresas", matching=0.97, waiting_time=10000):
+                self.not_found("baixaarecebermultiempresas")
+            self.click_relative(160, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "baixaarecebermultiempresas", matching=0.97, waiting_time=10000):
+                self.not_found("baixaarecebermultiempresas")
+            self.click_relative(160, 24)
+            self.type_up()
+            self.enter()
+            
+            x=0
+            while x<3:
+                if not self.find( "exportarobservacaonabaixa", matching=0.97, waiting_time=10000):
+                    self.not_found("exportarobservacaonabaixa")
+                self.click_relative(162, 27)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            y=0
+            while y<4:
+                if not self.find( "exportarobservacaonabaixa", matching=0.97, waiting_time=10000):
+                    self.not_found("exportarobservacaonabaixa")
+                self.click_relative(162, 27)
+                self.type_down()
+                y=y+1    
+            self.enter()
+            
+            x=0
+            while x<2:
+                if not self.find( "exigenciaplanofinanceiro", matching=0.97, waiting_time=10000):
+                    self.not_found("exigenciaplanofinanceiro")
+                self.click_relative(163, 25)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            y=0
+            while y<3:
+                if not self.find( "exigenciaplanofinanceiro", matching=0.97, waiting_time=10000):
+                    self.not_found("exigenciaplanofinanceiro")
+                self.click_relative(163, 25)            
+                self.type_down()
+                y=y+1
+            self.enter()
+            
+            
+            x=0
+            while x<2:
+                if not self.find( "exigenciarateiocentrodecusto", matching=0.97, waiting_time=10000):
+                    self.not_found("exigenciarateiocentrodecusto")
+                self.click_relative(222, 21)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<5:
+                if not self.find( "exigenciarateiocentrodecusto", matching=0.97, waiting_time=10000):
+                    self.not_found("exigenciarateiocentrodecusto")
+                self.click_relative(222, 21)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<3:
+                 if not self.find( "exigenciarateiocentrodecusto", matching=0.97, waiting_time=10000):
+                    self.not_found("exigenciarateiocentrodecusto")
+                 self.click_relative(222, 21)
+                 self.type_up()
+                 self.enter()
+                 x=x+1
+                
+            x=0
+            while x<2:
+                 if not self.find( "exigenciaclassificacao", matching=0.97, waiting_time=10000):
+                     self.not_found("exigenciaclassificacao")
+                 self.click_relative(163, 25)
+                 self.type_up()
+                 self.enter()
+                 x=x+1
+            
+            
+            x=0
+            while x<2:
+                if not self.find( "exigencialocaldecobranca", matching=0.97, waiting_time=10000):
+                    self.not_found("exigencialocaldecobranca")
+                self.click_relative(162, 24)
+                self.type_up()
+                self.enter()
+                x=x+1
+                
+            if not self.find( "exigencialocaldecobranca", matching=0.97, waiting_time=10000):
+                    self.not_found("exigencialocaldecobranca")
+            self.click_relative(162, 24)
+            self.type_down()
+            self.type_down()
+            self.enter()
+            
+            x=0
+            while x<2:
+                if not self.find( "quandodiavencefds", matching=0.97, waiting_time=10000):
+                    self.not_found("quandodiavencefds")
+                self.click_relative(163, 25)
+                self.type_down()
+                self.enter()
+                x=x+1
+            
+            if not self.find( "quandodiavencefds", matching=0.97, waiting_time=10000):
+                self.not_found("quandodiavencefds")
+            self.click_relative(163, 25)
+            self.type_up()
+            self.type_up()
+            self.enter()
+            
+            x=0
+            while x<4:
+                if not self.find( "valordaparcelamenorqueminimo", matching=0.97, waiting_time=10000):
+                     self.not_found("valordaparcelamenorqueminimo")
+                self.click_relative(163, 26)
+                self.type_down()
+                self.enter()
+                x=x+1
+                 
+            x=0
+            while x<4:
+                if not self.find( "valordaparcelamenorqueminimo", matching=0.97, waiting_time=10000):
+                     self.not_found("valordaparcelamenorqueminimo")
+                self.click_relative(163, 26)
+                self.type_up()                
+                x=x+1                   
+    
+            self.enter()
+            
+            if not self.find( "somarcobrancabancariaavalor", matching=0.97, waiting_time=10000):
+                self.not_found("somarcobrancabancariaavalor")
+            self.click_relative(162, 23)
+            self.type_up()
+            self.enter()
+            if not self.find( "somarcobrancabancariaavalor", matching=0.97, waiting_time=10000):
+                self.not_found("somarcobrancabancariaavalor")
+            self.click_relative(162, 23)
+            self.type_down()
+            self.enter()
+            
+            if not self.find( "operacaonabaixacheques", matching=0.97, waiting_time=10000):
+                self.not_found("operacaonabaixacheques")
+            self.click_relative(163, 26)
+            self.type_down()
+            self.enter()
+            if not self.find( "operacaonabaixacheques", matching=0.97, waiting_time=10000):
+                self.not_found("operacaonabaixacheques")
+            self.click_relative(163, 26)
+            self.type_up()
+            self.enter()
+            
+            if not self.find( "tipocontabilizacaobaixa", matching=0.97, waiting_time=10000):
+                self.not_found("tipocontabilizacaobaixa")
+            self.click_relative(161, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "tipocontabilizacaobaixa", matching=0.97, waiting_time=10000):
+                self.not_found("tipocontabilizacaobaixa")
+            self.click_relative(161, 24)
+            self.type_up()
+            self.enter()
+            
+            x=0
+            while x < 2:
+                if not self.find( "permitirdescontodurantebaixa", matching=0.97, waiting_time=10000):
+                    self.not_found("permitirdescontodurantebaixa")
+                self.click_relative(161, 24)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<2:
+                if not self.find( "permitirdescontodurantebaixa", matching=0.97, waiting_time=10000):
+                    self.not_found("permitirdescontodurantebaixa")
+                self.click_relative(161, 24)
+                self.type_up()
+                x=x+1
+            self.enter()
+            
+            if not self.find( "chequeemitidocamponominal", matching=0.97, waiting_time=10000):
+                self.not_found("chequeemitidocamponominal")
+            self.click_relative(159, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "chequeemitidocamponominal", matching=0.97, waiting_time=10000):
+                self.not_found("chequeemitidocamponominal")
+            self.click_relative(159, 24)
+            self.type_up()
+            self.enter()
+            
+            if not self.find( "encontrodecontas", matching=0.97, waiting_time=10000):
+                self.not_found("encontrodecontas")
+            self.click_relative(164, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "encontrodecontas", matching=0.97, waiting_time=10000):
+                self.not_found("encontrodecontas")
+            self.click_relative(164, 27)
+            self.type_down()
+            self.enter()
+            
+            
+            
+            x=0
+            while x<2:
+                if not self.find( "agrupartitulosfornecedores", matching=0.97, waiting_time=10000):
+                    self.not_found("agrupartitulosfornecedores")
+                self.click_relative(167, 24)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<2:
+                if not self.find( "agrupartitulosfornecedores", matching=0.97, waiting_time=10000):
+                    self.not_found("agrupartitulosfornecedores")
+                self.click_relative(167, 24)
+                self.type_up()
+                x=x+1
+            
+            self.enter()
+            
+            if not self.find( "prazominimoconvenio", matching=0.97, waiting_time=10000):
+                self.not_found("prazominimoconvenio")
+            self.click_relative(99, 26)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            if not self.find( "prazominimoconvenio", matching=0.97, waiting_time=10000):
+                self.not_found("prazominimoconvenio")
+            self.click_relative(163, 23)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            
+                            ####---REAJUSTES JUROS MORA E MULTA---####
+                             
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "jurosdemora", matching=0.97, waiting_time=10000):
+                self.not_found("jurosdemora")
+            self.click_relative(167, 26)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            if not self.find( "tipodoreajustejurosdemora", matching=0.97, waiting_time=10000):
+                self.not_found("tipodoreajustejurosdemora")
+            self.click_relative(165, 27)
+            self.type_down()
+            self.enter()
+            if not self.find( "tipodoreajustejurosdemora", matching=0.97, waiting_time=10000):
+                self.not_found("tipodoreajustejurosdemora")
+            self.click_relative(165, 27)
+            self.type_up()
+            self.enter()
+            if not self.find( "tipocalculojuros1", matching=0.97, waiting_time=10000):
+                self.not_found("tipocalculojuros1")
+            self.click_relative(164, 25)           
+            self.type_down()
+            self.enter()
+            if not self.find( "tipocalculojuros1", matching=0.97, waiting_time=10000):
+                self.not_found("tipocalculojuros1")
+            self.click_relative(164, 25)
+            self.type_up()
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "multa", matching=0.97, waiting_time=10000):
+                self.not_found("multa")
+            self.click_relative(161, 24)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            if not self.find( "tipodoreajustemulta", matching=0.97, waiting_time=10000):
+                self.not_found("tipodoreajustemulta")
+            self.click_relative(163, 23)
+            self.type_down()
+            self.enter()
+            if not self.find( "tipodoreajustemulta", matching=0.97, waiting_time=10000):
+                self.not_found("tipodoreajustemulta")
+            self.click_relative(163, 23)
+            self.type_up()
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "diascarenciareajuste1", matching=0.97, waiting_time=10000):
+                self.not_found("diascarenciareajuste1")
+            self.click_relative(163, 23)                        
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "diastoleranciavencimentoparcial", matching=0.97, waiting_time=10000):
+                self.not_found("diastoleranciavencimentoparcial")
+            self.click_relative(165, 25)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "diastoleranciaatrasobalcao", matching=0.97, waiting_time=10000):
+                self.not_found("diastoleranciaatrasobalcao")
+            self.click_relative(165, 25)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            
+                        ####---DESCONTO DE RECEBIMENTOS---####
+    
+            self.enter()
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "desconto", matching=0.97, waiting_time=10000):
+                self.not_found("desconto")
+            self.click_relative(162, 23)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            
+            x=0
+            while x<3:
+                if not self.find( "tipododesconto", matching=0.97, waiting_time=10000):
+                    self.not_found("tipododesconto")
+                self.click_relative(162, 25)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<5:
+                if not self.find( "tipododesconto", matching=0.97, waiting_time=10000):
+                    self.not_found("tipododesconto")
+                self.click_relative(162, 25)
+                self.type_up()
+                x=x+1
+            
+            self.enter()
+            
+            if not self.find( "tipocalculo", matching=0.97, waiting_time=10000):
+                self.not_found("tipocalculo")            
+            self.click_relative(164, 25)
+            self.type_down()
+            self.enter()
+            if not self.find( "tipocalculo", matching=0.97, waiting_time=10000):
+                self.not_found("tipocalculo")
+            self.click_relative(164, 25)
+            self.type_up()
+            self.enter()            
+            self.type_keys_with_interval(1,'123')
+            if not self.find( "diascarenciareajuste", matching=0.97, waiting_time=10000):
+                self.not_found("diascarenciareajuste")
+            self.click_relative(163, 25)
+            self.type_keys_with_interval(1,'123')
+            self.enter()
+            
+            if not self.find( "valorbordero", matching=0.97, waiting_time=10000):
+                self.not_found("valorbordero")
+            self.click_relative(164, 24)
+            self.type_down()
+            self.enter()
+            if not self.find( "valorbordero", matching=0.97, waiting_time=10000):
+                self.not_found("valorbordero")
+            self.click_relative(164, 24)
+            self.type_up()
+            self.enter()
+            
+                            ####---ABA 3 GESTAO ADM/VAREJO---####
+                             
+            if not self.find( "aba3paemp", matching=0.97, waiting_time=10000):
+                self.not_found("aba3paemp")
+            self.click()
+            
+            x=0
+            while x<8:
+                if not self.find( "tipodametadosvendedores", matching=0.97, waiting_time=10000):
+                    self.not_found("tipodametadosvendedores")
+                self.click_relative(211, 24)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+            x=0
+            while x<8:
+                if not self.find( "tipodametadosvendedores", matching=0.97, waiting_time=10000):
+                    self.not_found("tipodametadosvendedores")
+                self.click_relative(211, 24)
+                self.type_up()
+                self.enter()
+                x=x+1
+
+            
+            if not self.find( "calculocomissaoitens", matching=0.97, waiting_time=10000):
+                self.not_found("calculocomissaoitens")
+            self.click_relative(216, 25)
+            self.type_down()
+            self.enter()
+            if not self.find( "calculocomissaoitens", matching=0.97, waiting_time=10000):
+                self.not_found("calculocomissaoitens")
+            self.click_relative(216, 25)
+            self.type_up()
+            self.enter()
+            
+            
+            x=0
+            while x<6:
+                if not self.find( "tipolimiteparacompradores", matching=0.97, waiting_time=10000):
+                    self.not_found("tipolimiteparacompradores")               
+                self.click_relative(215, 27)
+                self.type_down()
+                self.enter()
+                x=x+1
+                
+                
+            x=0
+            while x<6:
+                if not self.find( "tipolimiteparacompradores", matching=0.97, waiting_time=10000):
+                    self.not_found("tipolimiteparacompradores")
+                self.click_relative(215, 27)
+                self.type_up()
+                self.enter()
+                x=x+1    
+                
+             
+            x=0
+            while x<4:
+                 if not self.find( "empresametaselimite", matching=0.97, waiting_time=10000):
+                     self.not_found("empresametaselimite")
+                 self.click_relative(214, 27)
+                 self.type_down()
+                 self.enter()
+                 x=x+1
+                 
+            x=0
+            while x<4:
+                 if not self.find( "empresametaselimite", matching=0.97, waiting_time=10000):
+                     self.not_found("empresametaselimite")
+                 self.click_relative(214, 27)
+                 self.type_up()
+                 self.enter()
+                 x=x+1
+             
+            self.enter()
+                 
+                             ####---GERAIS---####
+                              
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                
+    
+    
+            def not_found(self, label):
+                print(f"Element not found: {label}")
+
+if __name__ == '__main__':
+    Bot.main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
