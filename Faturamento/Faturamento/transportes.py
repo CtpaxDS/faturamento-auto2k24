@@ -1,4 +1,4 @@
-
+        
 from botcity.core import DesktopBot
 
 class Bot(DesktopBot):
@@ -22,7 +22,7 @@ class Bot(DesktopBot):
             self.enter()
             self.wait(1000)
             self.enter()
-
+         
             ###################################################################
             self.wait(1000)
             if not self.find( "transportes_cadastros1", matching=0.97, waiting_time=10000):
@@ -268,9 +268,9 @@ class Bot(DesktopBot):
             self.tab()
             self.type_keys_with_interval(1,"12122012")
             self.tab()
-            self.type_keys_with_interval(1,"13092003")
+            self.type_keys_with_interval(1,"130920003")
             self.tab()
-            self.type_keys_with_interval(1,"21092003")
+            self.type_keys_with_interval(1,"210920003")
             self.tab()
             self.type_keys_with_interval(1,"4520")
             ############################################################]
@@ -1256,14 +1256,12 @@ class Bot(DesktopBot):
                 x=x+1
                 #####################################################################################
                 #gabiarra
-            if not self.find( "transporte_empresa", matching=0.97, waiting_time=10000):
-                    self.not_found("transporte_empresa")
-            self.click_relative(93, 6)
-            if not self.find( "cod_0021", matching=0.97, waiting_time=10000):
-                self.not_found("cod_0021")
-            self.click()
-            if not self.find( "selecionar_cod0021", matching=0.97, waiting_time=10000):
-                self.not_found("selecionar_cod0021")
+            if not self.find( "empresa_pesquisar", matching=0.97, waiting_time=10000):
+                self.not_found("empresa_pesquisar")
+            self.click_relative(98, 10)
+            self.type_keys_with_interval(1,"0021")
+            if not self.find( "selecionar_code0021", matching=0.97, waiting_time=10000):
+                self.not_found("selecionar_code0021")
             self.click()
             if not self.find( "salvar_cadastro", matching=0.97, waiting_time=10000):
                 self.not_found("salvar_cadastro")
@@ -1716,8 +1714,8 @@ class Bot(DesktopBot):
             if not self.find( "retornar_menu_cadastr0_empresa", matching=0.97, waiting_time=10000):
                 self.not_found("retornar_menu_cadastr0_empresa")
             self.click()
-            if not self.find( "retornar_menu", matching=0.97, waiting_time=10000):
-                self.not_found("retornar_menu")
+            if not self.find( "retornar_para_menu", matching=0.97, waiting_time=10000):
+                self.not_found("retornar_para_menu")
             self.click()
             #############################################################################################
             #paises
@@ -1927,12 +1925,16 @@ class Bot(DesktopBot):
                 self.type_down()
                 self.enter()
                 x=x+1
-            self.tab()
+            if not self.find( "click_botton_up", matching=0.97, waiting_time=10000):
+                self.not_found("click_botton_up")
+            self.click()
+            self.click()
+            self.click()
             x=0
             while x<32:
                 if not self.find( "tipo_de_movimentacao", matching=0.97, waiting_time=10000):
-                    self.not_found("tipo_de_movimentacao")
-                self.click_relative(210, 24)
+                        self.not_found("tipo_de_movimentacao")
+                self.click_relative(208, 30)
                 self.type_down()
                 self.enter()
                 x=x+1
@@ -2471,9 +2473,9 @@ class Bot(DesktopBot):
             self.type_keys_with_interval(1,"002")
             x=0
             while x<12:
-                if not self.find( "motivo_desoneracao", matching=0.97, waiting_time=10000):
-                    self.not_found("motivo_desoneracao")
-                self.click_relative(295, 30)
+                if not self.find( "Motivo_desoneracao", matching=0.97, waiting_time=10000):
+                    self.not_found("Motivo_desoneracao")
+                self.click_relative(296, 26)
                 self.type_down()
                 self.tab()
                 x=x+1

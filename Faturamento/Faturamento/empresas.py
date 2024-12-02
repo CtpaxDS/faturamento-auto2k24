@@ -13,10 +13,10 @@ class Bot(DesktopBot):
                 self.not_found("btn_codigo_usuario")
             self.click_relative(47, 12)
                     
-            self.type_keys_with_interval(1,"999")
+            self.type_keys_with_interval(1,"002")
             self.enter()
             self.wait(500)
-            self.type_keys_with_interval(1,"tsfmx24")
+            self.type_keys_with_interval(1,"1811")
             self.enter()
 
             if not self.find( "btn_login", matching=0.97, waiting_time=10000):
@@ -32,20 +32,19 @@ class Bot(DesktopBot):
 
             #################-----TESTE INCLUIR/EDITAR-----####################
             self.wait(1500)
-            if not self.find( "cadastro_aba_abrir", matching=0.97, waiting_time=10000):
-                 self.not_found("cadastro_aba_abrir")
-            self.click()
+            if not self.find( "abrir_aba_cadastr0s", matching=0.97, waiting_time=10000):
+                 self.not_found("abrir_aba_cadastr0s")
+            self.click_relative(42, 30)
             self.wait(1000)
             #self.type_down()
             #self.type_down()
-            self.wait(1500)
             """
             self.enter()
             self.enter()
             self.enter()
             """
-            if not self.find( "abrir_empresas_cadast", matching=0.97, waiting_time=10000):
-                self.not_found("abrir_empresas_cadast")
+            if not self.find( "abrir_aba_empresa", matching=0.97, waiting_time=10000):
+                self.not_found("abrir_aba_empresa")
             self.click()
             if not self.find( "escolher_empresa", matching=0.97, waiting_time=10000):
                 self.not_found("escolher_empresa")
@@ -1376,8 +1375,8 @@ class Bot(DesktopBot):
             if not self.find( "faturamento_contrato_da_empresa", matching=0.97, waiting_time=10000):
                 self.not_found("faturamento_contrato_da_empresa")
             self.click_relative(41, 29)
-            if not self.find( "retornar_consultas_precos", matching=0.97, waiting_time=10000):
-                self.not_found("retornar_consultas_precos")
+            if not self.find( "retornar_consulta_de_precos", matching=0.97, waiting_time=10000):
+                self.not_found("retornar_consulta_de_precos")
             self.click()
 
             #self.type_keys_with_interval(1,"0001")
@@ -1504,6 +1503,7 @@ class Bot(DesktopBot):
             if not self.find( "selecionar_veiculos", matching=0.97, waiting_time=10000):
                 self.not_found("selecionar_veiculos")
             self.click()
+            
                             ####---GRUPOS CONTABEIS---####         
            
             if not self.find( "salvar_faturamento", matching=0.97, waiting_time=10000):

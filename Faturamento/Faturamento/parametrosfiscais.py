@@ -12,9 +12,9 @@ class Bot(DesktopBot):
                 self.not_found("btn_codigo_usuario")
             self.click_relative(47, 12)
                     
-            self.type_keys_with_interval(1,"999")
+            self.type_keys_with_interval(1,"002")
             self.wait(500)
-            self.type_keys_with_interval(1,"tsfmx24")
+            self.type_keys_with_interval(1,"1811")
             self.enter()
 
             if not self.find( "btn_login", matching=0.97, waiting_time=10000):
@@ -29,12 +29,12 @@ class Bot(DesktopBot):
                         ####---ABRINDO PARAMETROS---####
             self.enter()
             self.wait(1500)
-            if not self.find( "cadastro_aba_abrir", matching=0.97, waiting_time=10000):
-                 self.not_found("cadastro_aba_abrir")
-            self.click() 
+            if not self.find( "parametros_abrir_cadastro", matching=0.97, waiting_time=10000):
+                self.not_found("parametros_abrir_cadastro")
+            self.click_relative(27, 32)
             self.wait(1500)
-            if not self.find( "parametros", matching=0.97, waiting_time=10000):
-                self.not_found("parametros")
+            if not self.find( "parametr0s", matching=0.97, waiting_time=10000):
+                self.not_found("parametr0s")
             self.click()
             if not self.find( "parametros", matching=0.97, waiting_time=10000):
                 self.not_found("parametros")
@@ -1594,9 +1594,9 @@ class Bot(DesktopBot):
             
             x=0
             while x<4:
-                if not self.find( "margem_minima_vendas", matching=0.97, waiting_time=10000):
-                    self.not_found("margem_minima_vendas")
-                self.click_relative(161, 26)
+                if not self.find( "Margem_minima_pra_vendas", matching=0.97, waiting_time=10000):
+                    self.not_found("Margem_minima_pra_vendas")
+                self.click_relative(134, 23)
                 self.type_up()
                 self.enter()
                 x=x+1
@@ -2835,6 +2835,7 @@ class Bot(DesktopBot):
             self.click()
             
             
+            
                             ####---ABA9 CODIGOS PADROES---####
                              
             if not self.find( "aba9codigospadroes", matching=0.97, waiting_time=10000):
@@ -2999,8 +3000,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()           
-            if not self.find( "achar_cod01", matching=0.97, waiting_time=10000):
-                self.not_found("achar_cod01")
+            if not self.find( "achar_cod_0002", matching=0.97, waiting_time=10000):
+                self.not_found("achar_cod_0002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3014,8 +3015,8 @@ class Bot(DesktopBot):
                 self.not_found("achar")
             self.click()
             
-            if not self.find( "cod_01", matching=0.97, waiting_time=10000):
-                 self.not_found("cod_01")
+            if not self.find( "cod_002", matching=0.97, waiting_time=10000):
+                self.not_found("cod_002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3027,8 +3028,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()
-            if not self.find( "cpd_0001", matching=0.97, waiting_time=10000):
-                self.not_found("cpd_0001")
+            if not self.find( "cpd_002", matching=0.97, waiting_time=10000):
+                self.not_found("cpd_002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3041,8 +3042,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()
-            if not self.find( "cod_v_frete_001", matching=0.97, waiting_time=10000):
-                self.not_found("cod_v_frete_001")
+            if not self.find( "cod_v_frete_002", matching=0.97, waiting_time=10000):
+                self.not_found("cod_v_frete_002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3055,8 +3056,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()
-            if not self.find( "codigo_frete_001", matching=0.97, waiting_time=10000):
-                self.not_found("codigo_frete_001")
+            if not self.find( "codigo_frete_002", matching=0.97, waiting_time=10000):
+                self.not_found("codigo_frete_002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3069,8 +3070,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()
-            if not self.find( "codiguinho_001", matching=0.97, waiting_time=10000):
-                self.not_found("codiguinho_001")
+            if not self.find( "codiguinho_002_", matching=0.97, waiting_time=10000):
+                self.not_found("codiguinho_002_")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3083,8 +3084,8 @@ class Bot(DesktopBot):
             if not self.find( "achar", matching=0.97, waiting_time=10000):
                 self.not_found("achar")
             self.click()          
-            if not self.find( "faturamento_cadastro_cod_001", matching=0.97, waiting_time=10000):
-                self.not_found("faturamento_cadastro_cod_001")
+            if not self.find( "faturamento_cod_paramentros_002", matching=0.97, waiting_time=10000):
+                self.not_found("faturamento_cod_paramentros_002")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
@@ -3131,8 +3132,8 @@ class Bot(DesktopBot):
             #if not self.find( "cod101teste", matching=0.97, waiting_time=10000):
             #    self.not_found("cod101teste")
             #self.click()           
-            if not self.find( "retornar_consulta_vendedores", matching=0.97, waiting_time=10000):
-                self.not_found("retornar_consulta_vendedores")
+            if not self.find( "retornar_consulta_de_vedes", matching=0.97, waiting_time=10000):
+                self.not_found("retornar_consulta_de_vedes")
             self.click()
             self.wait(1000)
             if not self.find( "condicaodepagamentopadraovendas", matching=0.97, waiting_time=10000):
@@ -3241,8 +3242,8 @@ class Bot(DesktopBot):
             #    self.not_found("cod101teste")
             #self.click() 
             self.type_keys_with_interval(1,"00091")          
-            if not self.find( "selecionar_vendedor", matching=0.97, waiting_time=10000):
-                self.not_found("selecionar_vendedor")
+            if not self.find( "selecionar_vendedores", matching=0.97, waiting_time=10000):
+                self.not_found("selecionar_vendedores")
             self.click()
             self.wait(1000)
             if not self.find( "planoprecominimo", matching=0.97, waiting_time=10000):
@@ -3392,8 +3393,8 @@ class Bot(DesktopBot):
             if not self.find( "adiantamentoosa9p3", matching=0.97, waiting_time=10000):
                 self.not_found("adiantamentoosa9p3")
             self.click_relative(-24, 25)
-            if not self.find( "cod002dinheiro", matching=0.97, waiting_time=10000):
-                self.not_found("cod002dinheiro")
+            if not self.find( "banco_do_bradesco", matching=0.97, waiting_time=10000):
+                self.not_found("banco_do_bradesco")
             self.click()
             if not self.find( "escolhe", matching=0.97, waiting_time=10000):
                 self.not_found("escolhe")
